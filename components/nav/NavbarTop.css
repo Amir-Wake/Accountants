@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
+
+* {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Titillium Web", sans-serif;
+}
+
+:root {
+	--mainColor: #125daedc;
+	--mainColorLight: #5767aa;
+	--secondaryColor: #db2b39;
+	--textColor: #eee;
+}
+.navbar-container{
+width: 100%;
+}
+.logo-text{
+    padding-left: 3%;
+    width: 150px;
+    font-size: 4rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #1b2a5f;
+}
+.logo-info{
+position:absolute;
+margin-top: 65px;
+margin-left: 40px;
+font-size: 20px;
+font-family: monospace;
+}
+header {
+    background: transparent;
+    display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100px;
+	padding: 0 2rem;
+	background-image: linear-gradient(225deg, rgb(0, 0, 0,0.5) 0%, rgb(43, 43, 43,0.6) 100%);
+	color: var(--textColor);
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+
+}
+
+nav a {
+	margin: 0 0.8rem;
+	color: var(--textColor);
+	text-decoration: none;
+    font-size: 1.2rem;
+}
+.navitems{
+	margin-right: -40%;
+}
+nav a:hover {
+	color: var(--secondaryColor);
+}
+
+header .nav-btn {
+	padding: 5px;
+	color: black;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+header div,
+nav {
+	display: flex;
+	align-items: center;
+	width: 100%;    
+}
+
+@media only screen and (max-width: 600px) {
+	header .nav-btn {
+		visibility: visible;
+		opacity: 1;
+		color: white;
+		z-index: 0;
+		
+	}
+
+	header nav {
+		left: 65%;
+		position: fixed;
+		top: -100%;
+		height:fit-content;
+		width: 90%;
+		padding: 10%;
+		padding-left: 4%;
+		display:flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background-image: linear-gradient(225deg, rgb(156, 236, 251) 0%, rgba(255, 255, 255) 50%, #fcfcfc 100%);
+		-webkit-transition: all 0.5s ease;
+		-moz-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+		border: 2px black solid;
+		border-radius: 10px;
+		transform: translate(100%, 100%);
+		
+	}
+	header nav a{
+padding-top: 6%;
+margin-top: 3%;
+margin-left: 20%;
+color: black;
+
+	}
+
+	header .responsive_nav {
+		transform: translateY(100vh);
+		width: 100%;
+		z-index: 500;
+		position: fixed;
+		top: -100%;
+	}
+
+	nav .nav-close-btn {
+		visibility: visible;
+		color: black;
+		margin-right: 50%;
+		position: absolute;
+		top:10px;
+		z-index: 505;		
+	}
+
+	nav a {
+		font-size: 1.2rem;
+	}
+}

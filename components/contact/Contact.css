@@ -1,0 +1,126 @@
+.contact-container{
+margin-top: 20%;
+display:grid;
+position: relative;
+align-items: center;
+justify-items: center;
+background-image: url("./images/bg2.jpg");
+background-repeat: repeat;
+background-size:contain;
+}
+@media only screen and (max-width: 989px) {
+    .contact-container{
+        margin-bottom: -2%;
+        }
+}
+.section-title{
+text-align: center;
+position: relative;
+color: #ffffff;
+}
+.section-title p {
+    font-family: 'RobotoMono Regular';
+    font-size: 2rem;
+
+  }
+
+  .section-title h2 {
+    font-family: 'Montserrat Bold';
+    font-size: 4rem;
+    margin-top: 0.5rem;
+    text-transform: uppercase;
+  }
+  @media only screen and (max-width: 740px) {
+    .section-title p {
+        font-size: 1rem;
+    
+      }
+      .section-title h2 {
+        font-size: 2rem;
+
+      }
+}
+
+.contact-info{
+    width:100%;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    margin-left: 5%; 
+}
+
+.box img{
+width: 60px;
+height: 45px;
+}
+.box img,h3{
+display: flex;  }
+.box h3{
+    text-align: center;
+position: relative;
+top: -45px;
+padding-left: 5%;
+margin-left: 30%;
+font-weight: bolder;
+}
+.box p{
+    margin-top:-30px;
+    font-size: 18px;
+    }
+.box{
+    display: flexbox;
+    margin-left: -10%;
+    padding: 10%;
+    padding-top: 10px;
+    margin-right: 10%;
+    /* color: white;
+    background-color: rgba(93, 110, 161, 0.8); */
+    background-color: rgba(171, 192, 233, 0.796);
+}
+.contact-form{
+    background-color: rgba(171, 192, 233, 0.796);
+padding: 5%;
+border-radius: 30px;
+}
+
+@media only screen and (max-width: 991px) {
+    .contact-form{
+        height: 95%;
+        padding-left: 10%;
+        padding-right: 10%;
+        }
+}
+@media only screen and (max-width: 700px) {
+    .contact-form{
+        height: 98%;
+        padding-left: 10%;
+        padding-right: 10%;
+        }
+        .contact-container{
+            margin-bottom: -3%;
+            }
+}
+@media only screen and (max-width: 400px) {
+        .contact-container{
+            margin-bottom: -4%;
+            }
+}
+.col1{
+    width: 40%;
+}
+.col2{
+    width: 60%;
+}
+
+.container h2{ 
+font-size: 20px;
+padding-top: 10px;
+}
+.infocontainer{
+    padding-left: 10px;
+    padding-top: 10px;
+
+
+}

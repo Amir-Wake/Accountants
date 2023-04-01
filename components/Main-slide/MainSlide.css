@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  z-index: 900;
+
+}
+
+:root {
+  --heights: 90vh;
+  --widths: 100%;
+}
+
+.slider-container {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+  margin: auto;
+}
+
+.active {
+  display: inline-block;
+}
+
+.inactive {
+  display: none;
+}
+
+.slides {
+  height: var(--heights);
+  width: var(--widths);
+  position: relative;
+}
+
+.slide-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+}
+
+.slide-info{
+
+  position: absolute;
+  margin-left: 2.5%;
+  width: 95%;
+  margin-top: 30vh;
+  display: inline-block;
+  text-align: center;
+  background-color: rgba(43, 58, 83, 0.4);
+
+}
+@media only screen and (max-width: 530px){
+	.slide-info{
+    margin-top: 50%;
+    font-size: 10px;
+
+	}
+  .slide-title,
+.slide-text {
+  font-size: 10px;
+}
+  
+}
+
+.slide-title,
+.slide-text {
+  width: 95%;
+  color: white;
+  position: relative;
+  padding-left: 10px;
+  padding: 10PX;
+  font-size: 20px;
+}
+.slide-title{
+  color: rgb(255, 255, 255);
+  padding-left: 15%;
+  padding-right: 15%;
+  font-size: 30px;
+  font-weight: bold;
+
+  
+}
+
+.slide-text {
+
+-webkit-box-orient: vertical;
+}
+@media only screen and (max-width: 530px){
+  .slide-title,
+.slide-text {
+  font-size: 20px;
+}
+  
+}
+@media only screen and (max-width: 530px){
+  .slide-title,
+.slide-text {
+  font-size: 20px;
+}
+  
+}
+@media screen and (orientation:landscape) {
+  .slide-text {
+    font-size: 15px;
+  }}
+.prev,
+.next {
+  color: transparent;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 1rem;
+  margin-top: -3rem;
+  font-size: 40px;
+  font-weight: bold;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.slider-container:hover .prev,.slider-container:hover .next {
+  color: black
+}
+
+.slider-container:hover .prev:hover,
+.slider-container:hover .next:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease-in;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.play-pause {
+  color: black;
+}

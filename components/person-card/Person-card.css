@@ -1,0 +1,83 @@
+.team-Container{
+  max-height: 700px;
+}
+.teams {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+}
+.team{
+    padding: 10%;
+    padding-left: 0;
+    width: 90%;
+    background: #ffffff;
+    position: relative;
+    transition: 0.5s ease-out;
+}
+.team img {
+  position:absolute;
+  display:flexbox;
+  border: 2px solid rgb(244, 211, 0);
+  border-radius: 4px;
+  width: 40%;
+  height: 40%;
+  margin-left: 0;
+  top:20%;
+ object-fit: cover;
+}
+@media only screen and (max-width: 530px) {
+	.team img {
+    width: 40%;
+    height: 30%;
+  }
+  }
+.team-info {
+
+  border: 2px solid rgb(0, 0, 0);
+  background-color: rgba(183, 183, 183, 0.2);
+  border-radius: 4px;
+  margin-left: 30%;
+  padding-left: 15%;
+  width: 80%;
+  height: 500px;
+}
+.team-detail{
+    position: relative;
+    padding: 20px;
+    padding-top: 0;
+    display:flex;
+    font-size: 16px;
+    overflow: scroll;
+   display: -webkit-box;
+   -webkit-line-clamp: 15; /* number of lines to show */
+           line-clamp: 15; 
+   -webkit-box-orient: vertical;
+
+}
+@media only screen and (max-width: 530px) {
+	.team-detail {
+    font-size: 14px;
+  }
+  }
+.team-title {
+    padding: 10%;
+    font-size: 30px;
+}
+
+.team-header {
+
+  margin-left: 10%;
+  padding: 10px;
+  padding-top: 5%;
+  padding-bottom: 0;
+  margin-bottom: -15px;
+}
+.team-header h3 {
+  font-family: monospace;
+  font-size: 25px;
+  opacity: 0.8;
+}
+.team-header h1 {
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+}
